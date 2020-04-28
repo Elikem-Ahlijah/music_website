@@ -1,0 +1,121 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Music_website-edit/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="logo">
+          <h1>WeafMusic</h1>
+        </div>
+
+        <nav>
+            <div class="burger" v-on:click="burgerDisplay">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+          <ul class="nav-links" :class="{notEat: burgerOpen}">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li>
+              <a href="/Music_website-edit/index.html" class="nav-link"
+                >Join now</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section-1">
+          <div class="img-1">
+            <img src="/section-img-1.svg" alt="" />
+          </div>
+
+          <div class="text-btn">
+            <h1>Music like never.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
+              culpa nobis? Nesciunt repudiandae ducimus tempora atque ullam.
+              Beatae adipisci, cupiditate exercitationem, fugit, incidunt
+              pariatur omnis et quo excepturi tempore praesentium.
+            </p>
+            <div class="btn">
+              <button class="btn-1">Join now</button>
+              <button class="btn-2">Learn More</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-2">
+          <div class="img-2">
+            <img src="/section-img-2.svg" alt="" />
+          </div>
+
+          <div class="text-btn-2">
+            <h1>Music Anywhere, anytime.</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestias voluptatem unde iure voluptatum labore quaerat, in eius
+              laboriosam. Fugit quisquam officiis dolores molestiae ullam
+              aperiam dicta
+            </p>
+            <a href="#" class="learn">Learn More</a>
+          </div>
+        </section>
+
+        <section class="section-3">
+          <div class="first-container">
+            <img src="/about.svg" alt="" />
+            <h4>About Us</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et
+              dignissimos aperiam earum id, nobis sunt optio a quam voluptatem.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+              consequuntur id. Natus?
+            </p>
+            <div class="learn-link">
+                <a href="#" class="learn-1">Learn More</a>
+              </div>
+          </div>
+          <div class="second-container">
+            <img src="/playlist.svg" alt="" />
+            <h4>Create Playlist</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et
+              dignissimos aperiam earum id, nobis sunt optio a quam voluptatem.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+              consequuntur id. Natus?
+            </p>
+            <div class="learn-link">
+                <a href="#" class="learn-1">Learn More</a>
+              </div>
+          </div>
+          <div class="third-container">
+            <img src="/card.svg" alt="" />
+            <h4>Affordable</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque et
+              dignissimos aperiam earum id, nobis sunt optio a quam voluptatem.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
+              consequuntur id. Natus?
+            </p>
+            <div class="learn-link">
+              <a href="#" class="learn-1">Learn More</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+          <p>&copy;2020 copyright. All right reseverd</p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
